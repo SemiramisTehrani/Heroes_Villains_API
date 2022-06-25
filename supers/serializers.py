@@ -1,10 +1,10 @@
 
 
 from rest_framework import serializers   
-from .models import Stone, Supers
+from .models import Super
 
-class SupersSerializer(serializers.ModelSerializer):
+class SuperSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Supers
+        model = Super
         fields = ['id','name','alter_ego', 'primary_ability', 'secondary_ability', 'catchphrase']
 
